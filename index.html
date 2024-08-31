@@ -3,43 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Scrollbars</title>
-    <style>
-        /* Scrollbar Customization CSS */
-        /* WebKit Browsers (Chrome, Safari, Edge) */
-        ::-webkit-scrollbar {
-            width: 12px;
-            height: 12px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background-color: #888;
-            border-radius: 10px;
-            border: 3px solid #f1f1f1;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background-color: #555;
-        }
-
-        /* Firefox */
-        * {
-            scrollbar-width: thin;
-            scrollbar-color: #888 #f1f1f1;
-        }
-
-        /* Internet Explorer */
-        body {
-            scrollbar-face-color: #888;
-            scrollbar-track-color: #f1f1f1;
-        }
-    </style>
+    <title>Graphaxe 2D Game Engine</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Your page content -->
+    <div class="container">
+        <header>
+            <img src="assets/logo.png" alt="Graphaxe Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#docs">Docs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="hero">
+            <h1>Graphaxe</h1>
+            <p>The Ultimate 2D Game Engine for Haxe</p>
+            <a href="#get-started" class="cta-button">Get Started</a>
+        </section>
+        
+        <section id="about" class="about">
+            <h2>About Graphaxe</h2>
+            <p>Graphaxe is a powerful and flexible 2D game engine built with Haxe. Designed to be lightweight yet feature-rich, Graphaxe allows you to build stunning games with ease.</p>
+        </section>
+        
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>⚡ High-performance rendering</li>
+                <li>🛠️ Customizable workflows</li>
+                <li>🎨 Advanced graphical effects</li>
+                <li>📜 Cross-platform support</li>
+            </ul>
+        </section>
+        
+        <section id="docs" class="docs">
+            <h2>Documentation</h2>
+            <p>Comprehensive documentation to help you get the most out of Graphaxe. Whether you're a beginner or an experienced developer, we've got you covered.</p>
+            <a href="#docs" class="cta-button">Read the Docs</a>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Have questions or want to contribute? Get in touch with us.</p>
+            <a href="mailto:questions@dimensionscape.com" class="cta-button">Email Us</a>
+        </section>
+        
+        <footer>
+            <p>&copy; 2024 Graphaxe. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
