@@ -206,3 +206,35 @@ footer p {
         text-shadow: -2px 2px 20px rgba(255, 0, 128, 1), 2px -2px 20px rgba(0, 255, 157, 1);
     }
 }
+
+/* Customize Scrollbars */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00ff9d;
+    border-radius: 6px;
+    border: 3px solid #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ff0080;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #00ff9d #0d0d0d;
+}
+
+/* Internet Explorer */
+body {
+    scrollbar-face-color: #00ff9d;
+    scrollbar-track-color: #0d0d0d;
+}
