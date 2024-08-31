@@ -83,15 +83,25 @@ nav ul li a:hover {
     position: relative;
 }
 
-.hero h1 {
-    font-size: 5rem;
-    margin: 0;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #00ff9d, #ff0080);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: flicker 2s infinite alternate;
+/* Responsive Logo Image */
+.hero .logo {
+    max-width: 100%;
+    height: auto;
+    width: 80%; /* Default width as a percentage of the container */
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .hero .logo {
+        width: 60%; /* Wider screens, reduce the logo size for better layout */
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero .logo {
+        width: 50%; /* For very large screens, make the logo smaller */
+    }
 }
 
 .hero p {
