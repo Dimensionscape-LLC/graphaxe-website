@@ -148,7 +148,7 @@ section {
     position: absolute;
     left: 0;
     bottom: 10px;
-    width: 250px;
+    width: 400px;
     height: 4px;
     background: linear-gradient(90deg, #00ff9d, #ff0080);
 }
